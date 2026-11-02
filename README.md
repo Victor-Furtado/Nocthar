@@ -241,6 +241,43 @@ O projeto deve priorizar composição para definir mecânicas de combate.
 
 Novas ações, efeitos, comportamentos de inimigos e mecânicas de bosses devem poder ser adicionados sem exigir alterações extensas no núcleo do sistema.
 
+## Organização dos Arquivos
+
+Os headers ficam em `include/nocthar/` e as implementações correspondentes em `src/`, organizados pelos mesmos módulos:
+
+| Diretório | Responsabilidade |
+|---|---|
+| `core/` | Infraestrutura básica, aplicação, tempo e aleatoriedade |
+| `game/` | Domínio da batalha, participantes, grid, timeline, actions e events |
+| `platform/` | Integração com SDL3, janela, input e filesystem |
+| `renderer/` | Câmera, OpenGL, recursos e renderização |
+| `debug/` | Ferramentas de depuração |
+
+O domínio em `game/` deve permanecer independente de SDL3, OpenGL e detalhes de plataforma. A simulação deve preservar determinismo.
+
+Outros diretórios na raiz:
+
+| Diretório | Conteúdo |
+|---|---|
+| `assets/graphics/` | Recursos gráficos |
+| `assets/fonts/` | Fontes |
+| `assets/shaders/` | Shaders |
+| `assets/audio/` | Recursos de áudio |
+| `config/` | Configurações |
+| `tests/` | Testes automatizados |
+| `docs/` | Documentação do projeto, incluindo ADRs e mecânicas |
+
+Estrutura inicial:
+
+```text
+include/nocthar/{core,game,platform,renderer,debug}/
+src/{core,game,platform,renderer,debug}/
+assets/{graphics,fonts,shaders,audio}/
+config/
+tests/
+docs/
+```
+
 ---
 
 # Tecnologias
@@ -302,5 +339,5 @@ As próximas tarefas de design técnico são:
 
 - ~~Definir o modelo matemático da timeline dinâmica.~~
 - ~~Definir o modelo de domínio do sistema de batalha.~~
-- Definir a estrutura inicial do projeto.
+- ~~Definir a estrutura inicial do projeto.~~
 - Criar o primeiro protótipo jogável de batalha.
