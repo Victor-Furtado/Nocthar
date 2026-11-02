@@ -6,26 +6,34 @@ O combate utiliza uma timeline dinâmica, na qual cada participante recebe oport
 
 A frequência de ações é determinada pela combinação de dois atributos:
 
-F = V × D
+$$
+F = V \times D
+$$
 
 - **Velocidade (V):** determina a frequência básica de ações do participante.
 - **Periculosidade (D):** multiplica a frequência de participantes especiais, como bosses.
 
 Para limitar a diferença entre participantes rápidos e lentos, a frequência efetiva passa por uma curva de redução baseada na raiz quadrada:
 
-Fₐ = √F
+$$
+F_a = \sqrt{F}
+$$
 
 Onde:
 - **F:** frequência original.
-- **Fₐ:** frequência ajustada.
+- **Fₐ:** frequência ajustada ($F_a$).
 
 O intervalo necessário para realizar uma ação é:
 
-Δt = 1 / Fₐ
+$$
+\Delta t = \frac{1}{F_a}
+$$
 
 Ou, de forma expandida:
 
-Δt = 1 / √(V × D)
+$$
+\Delta t = \frac{1}{\sqrt{V \times D}}
+$$
 
 ### Progresso de Ação
 
@@ -33,7 +41,9 @@ Cada participante possui um progresso individual entre 0 e 1, representando o av
 
 O progresso aumenta continuamente de acordo com sua frequência ajustada:
 
-dP/dt = Fₐ
+$$
+\frac{dP}{dt} = F_a
+$$
 
 Quando o progresso alcança 1, o participante fica apto a agir. Após executar sua ação, seu progresso é reduzido em 1.
 
@@ -41,7 +51,9 @@ Quando o progresso alcança 1, o participante fica apto a agir. Após executar s
 
 A timeline calcula quanto tempo falta para cada participante completar seu progresso:
 
-Δtᵢ = (1 - Pᵢ) / Fₐᵢ
+$$
+\Delta t_i = \frac{1 - P_i}{F_{a_i}}
+$$
 
 O menor intervalo determina o próximo instante de ação.
 
