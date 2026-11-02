@@ -164,6 +164,8 @@ O MVP deve permitir que o jogador:
 
 # Princípios de Arquitetura
 
+As decisões arquiteturais propostas para o MVP estão registradas nos [ADRs do MVP](docs/ADR/ADR%20-%20MVP.md).
+
 ## Lógica do Jogo Independente da Plataforma
 
 O núcleo do jogo não deve depender de:
