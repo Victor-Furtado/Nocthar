@@ -381,18 +381,18 @@ necessidades do primeiro encontro jogável.
 
 ## Resumo das decisões
 
-  ADR       Decisão                                      Status
-  --------- -------------------------------------------- ----------
-  ADR-001   Separar domínio, plataforma e renderização   Proposed
-  ADR-002   Utilizar `Battle` como raiz do domínio       Proposed
-  ADR-003   Representar participantes por composição     Proposed
-  ADR-004   Manter o Grid independente da apresentação   Proposed
-  ADR-005   Separar agendamento e execução de ações      Proposed
-  ADR-006   Separar Commands de Events                   Proposed
-  ADR-007   Utilizar IDs inteiros sequenciais            Proposed
-  ADR-008   Utilizar Commands tipados                    Proposed
-  ADR-009   Preservar determinismo                       Proposed
-  ADR-010   Limitar o domínio inicial ao MVP             Proposed
+| ADR | Decisão | Status |
+|---|---|---|
+| ADR-001 | Separar domínio, plataforma e renderização | Proposed |
+| ADR-002 | Utilizar `Battle` como raiz do domínio | Proposed |
+| ADR-003 | Representar participantes por composição | Proposed |
+| ADR-004 | Manter o Grid independente da apresentação | Proposed |
+| ADR-005 | Separar agendamento e execução de ações | Proposed |
+| ADR-006 | Separar Commands de Events | Proposed |
+| ADR-007 | Utilizar IDs inteiros sequenciais | Proposed |
+| ADR-008 | Utilizar Commands tipados | Proposed |
+| ADR-009 | Preservar determinismo | Proposed |
+| ADR-010 | Limitar o domínio inicial ao MVP | Proposed |
 
 ## Próximos passos
 
