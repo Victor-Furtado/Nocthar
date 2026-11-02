@@ -126,7 +126,7 @@ O MVP deve permitir que o jogador:
 - [ ] Estado ativo/inativo
 - [ ] Velocidade
 
-### Timeline Dinâmica
+### Timeline Dinâmica [Dynamic-Timeline.md](docs/Mechanics/Dynamic-Timeline.md)
 
 - [ ] Sem rodadas fixas
 - [ ] Velocidade influencia a frequência de ações
@@ -298,7 +298,7 @@ A prioridade atual é validar:
 
 As próximas tarefas de design técnico são:
 
-- Definir o modelo matemático da timeline dinâmica.
-- Definir o modelo de domínio do sistema de batalha.
+- ~~Definir o modelo matemático da timeline dinâmica.~~
+- ~~Definir o modelo de domínio do sistema de batalha.~~
 - Definir a estrutura inicial do projeto.
 - Criar o primeiro protótipo jogável de batalha.
